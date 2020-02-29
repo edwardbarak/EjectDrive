@@ -1,0 +1,1 @@
+function Eject-Drive { param([string]$drive); $drive = $drive.toUpper(); echo "(New-Object -comObject Shell.Application).Namespace(17).ParseName(`"$drive`:`").InvokeVerb(`"Eject`")" | powershell.exe }
